@@ -1,5 +1,5 @@
 {
-  "type" : "module",
+  "type": "module",
   "name": "backend",
   "version": "1.0.0",
   "main": "app.js",
@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "nodemon": "^3.1.11"
   }
