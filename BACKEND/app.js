@@ -1,9 +1,9 @@
 import express from "express";
-const app = express();
 import {nanoid} from "nanoid";
 import dotenv from "dotenv";
-
 dotenv.config("./.env")
+import fileCabinet from './src/config/mongo.config.js';
+const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -19,7 +19,6 @@ app.post('/api/create', (req, res) => {
 })
 
 app.listen(3000, () => {
+    fileCabinet()
 console.log('Server is running on port 3000'); 
 })
-
-39: 56
